@@ -1,0 +1,1 @@
+json.extract! @sale, :id, :customer_name, :item_name, :description, :barcode, :cost_price, :retail_price, :date_delivered, :date_of_expiry, :quantity, :sales_person, :date_sold, :created_at, :updated_at

@@ -1,0 +1,14 @@
+
+    <div class="col-sm-3" style="float:right; padding-bottom:5px">
+    <!-- When submit the form, the view rendered will be the index view of our articles resource -->
+    <%= form_tag(items_path, :method => "get", id: "search-form") do %>
+      <div class="input-group input-group-sm">
+        <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "Search Items" %>
+        <!-- In order to have the "search" icon int the button, we need to use plain HTML instead 
+           of using a Rails form helper -->
+        <span class="input-group-btn">
+          <button class="btn btn-info btn-flat" type="submit">Go!</button>
+        </span>
+      </div>
+      <%end%>
+    </div>

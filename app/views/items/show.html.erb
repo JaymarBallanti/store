@@ -1,0 +1,40 @@
+<div class="box box-primary">
+<div class="page-header">
+  <%= link_to items_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_item_path(@item), class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Item Info</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Item name:</dt>
+  <dd><%= @item.item_name %></dd>
+
+  <dt>Description:</dt>
+  <dd><%= @item.description %></dd>
+
+  <dt>Barcode:</dt>
+  <dd><%= @item.barcode %></dd>
+
+  <dt>Cost price:</dt>
+  <dd><%= @item.cost_price %></dd>
+
+  <dt>Retail price:</dt>
+  <dd><%= @item.retail_price %></dd>
+
+  <dt>Date delivered:</dt>
+  <dd><%= @item.date_delivered %></dd>
+
+  <dt>Date of expiry:</dt>
+  <dd><%= @item.date_of_expiry %></dd>
+
+  <dt>Quantity:</dt>
+  <dd><%= @item.quantity %></dd>
+
+</dl>
+</div>

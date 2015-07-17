@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  item_name: MyString
+  description: MyText
+  barcode: MyString
+  cost_price: 
+  retail_price: 
+  date_delivered: 2015-07-14 22:09:13
+  date_of_expiry: 2015-07-14
+  quantity: 
+
+two:
+  item_name: MyString
+  description: MyText
+  barcode: MyString
+  cost_price: 
+  retail_price: 
+  date_delivered: 2015-07-14 22:09:13
+  date_of_expiry: 2015-07-14
+  quantity: 

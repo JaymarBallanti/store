@@ -1,0 +1,49 @@
+<div class="box box-primary">
+<div class="page-header">
+  <%= link_to sales_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_sale_path(@sale), class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show Sale</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Customer name:</dt>
+  <dd><%= @sale.customer_name %></dd>
+
+  <dt>Item name:</dt>
+  <dd><%= @sale.item_name %></dd>
+
+  <dt>Description:</dt>
+  <dd><%= @sale.description %></dd>
+
+  <dt>Barcode:</dt>
+  <dd><%= @sale.barcode %></dd>
+
+  <dt>Cost price:</dt>
+  <dd><%= @sale.cost_price %></dd>
+
+  <dt>Retail price:</dt>
+  <dd><%= @sale.retail_price %></dd>
+
+  <dt>Date delivered:</dt>
+  <dd><%= @sale.date_delivered %></dd>
+
+  <dt>Date of expiry:</dt>
+  <dd><%= @sale.date_of_expiry %></dd>
+
+  <dt>Quantity:</dt>
+  <dd><%= @sale.quantity %></dd>
+
+  <dt>Sales person:</dt>
+  <dd><%= @sale.sales_person %></dd>
+
+  <dt>Date sold:</dt>
+  <dd><%= @sale.date_sold %></dd>
+
+</dl>
+</div>
